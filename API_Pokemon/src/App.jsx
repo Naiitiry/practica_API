@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-
+// el video arranca con la programacion desde 1 hr 25  min
 const App = ()=>{
 
     const [pokemonNumber,setPokemonNumber] = useState(1)
@@ -7,9 +7,10 @@ const App = ()=>{
 
     const handleNext = ()=>{
         setPokemonNumber(pokemonNumber+1)
+
     }
     const handlePreview = ()=>{
-        setPokemonNumber(pokemonNumber-1)
+        (pokemonNumber===1) ?   setPokemonNumber(1) : setPokemonNumber(pokemonNumber-1)
     }
 
     useEffect(()=>{
@@ -18,7 +19,7 @@ const App = ()=>{
         //     .then((result)=>result.json())
         //     .then(data=>setPokemonName(data.name))
 
-        // Aqui va la API con Async await
+        // Aqui va la funcion API con Async/await
         searchPokemon(pokemonNumber)
     },[pokemonNumber])
 
