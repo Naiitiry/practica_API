@@ -52,7 +52,7 @@ function App() {
 
   return (
     <div className='App'>
-      <div className="card-container">
+      <div className={`card-container card${pokemonEvolutions.length}`}>
         {pokemonEvolutions.map(pokemon=>
         <Card key={pokemon[0]} name={pokemon[0]} img={pokemon[1]} />
         )}
