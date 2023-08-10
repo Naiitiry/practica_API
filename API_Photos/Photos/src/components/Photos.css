@@ -1,0 +1,21 @@
+.photos-container {
+     /* Ajusta el ancho para que quepan cinco imágenes */
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: 3px 3px 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+.photos_img { 
+    width: 100%;
+    flex-grow: 1;
+}
+
+.pharagrap {
+    background-color: darkgreen;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+}
