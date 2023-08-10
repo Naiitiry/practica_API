@@ -10,7 +10,9 @@ const App = ()=>{
 
     }
     const handlePreview = ()=>{
-        (pokemonNumber===1) ?   setPokemonNumber(1) : setPokemonNumber(pokemonNumber-1)
+        if(pokemonNumber>1){
+            setPokemonNumber(pokemonNumber-1)
+        }
     }
 
     useEffect(()=>{
