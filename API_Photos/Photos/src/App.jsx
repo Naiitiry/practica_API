@@ -13,7 +13,9 @@ function App() {
     }
   }
   const handleNext = () =>{
-    setPhotosId(photosId+1)
+    if(photosId<5000){
+    setPhotosId(photosId+1);
+    }
   }
 
   useEffect(()=>{
