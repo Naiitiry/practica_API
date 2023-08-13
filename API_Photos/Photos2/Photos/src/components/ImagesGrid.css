@@ -1,0 +1,20 @@
+.imageGrid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,230px);
+    gap:40px;
+    padding:40px;
+    justify-content: center;
+}
+.imageGrid h3{
+    font-size: 5em;
+    margin-top: 50px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 45px;
+}
+.pagination button{
+
+}

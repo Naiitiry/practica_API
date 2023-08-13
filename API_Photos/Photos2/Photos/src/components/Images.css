@@ -1,0 +1,15 @@
+.imageCard {
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.images{
+    border-radius: 10px;
+    height: 200px;
+    list-style: none;
+}
+@media(max-width:560px){
+    .images{
+    height: 200px;
+}}
