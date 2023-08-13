@@ -1,0 +1,9 @@
+.App{
+    background-color: #a55c3e;
+    height: 100vh;
+}
+.App-h1{
+    text-align: center;
+    font-size: 3em;
+    color: #2E1E0F;
+}
