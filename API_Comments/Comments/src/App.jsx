@@ -1,17 +1,12 @@
-
+import { ComentariosGrid } from '../components/CommentsGrid.jsx'
 import './App.css'
 
 const App=() => {
 
   return (
     <>
-      <header>
-        <h1 className="title">
-
-        </h1>
-      </header>
-      <main>
-        xd
+      <main className='App'>
+        <ComentariosGrid/>
       </main>
     </>
   )

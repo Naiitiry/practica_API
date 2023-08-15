@@ -1,0 +1,32 @@
+.id-comment{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 35px;
+}
+.comment{
+    font-size: 25px;
+    text-align: center;
+    font-style: oblique;
+    color: #8B008B;
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+.btns{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    margin: 50px 0px 25px 25px;
+}
+.btns>button{
+    padding: 25px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.btns>button:hover{
+    background-color: #5F9EA0;
+}

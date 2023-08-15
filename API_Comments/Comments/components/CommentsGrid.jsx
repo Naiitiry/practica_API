@@ -5,20 +5,46 @@ import { useState } from "react"
 
 const ComentariosGrid = () =>{
     const {data,loading,error} = useFetch(`https://jsonplaceholder.typicode.com/comments`)
-    // Cantidad de comentarios por páginas
-    const commentsPerPage = 1;
+    const [currentCommentIndex, setCurrentCommentIndex] = useState(0);
+    const handleNextComment = () => {
+        if (currentCommentIndex < data.length - 1) {
+            setCurrentCommentIndex(currentCommentIndex + 1);
+        }
+    };
 
-    const [currentPage,setCurrentPage] = useState(0)
-
+    const handleFirstComment = ()=>{
+        setCurrentCommentIndex(0)
+    }
+    const handlePreviewComment = () => {
+        if (currentCommentIndex > 0) {
+            setCurrentCommentIndex(currentCommentIndex - 1);
+        }
+    };
     
-
+    const handleCommentSearch = (id) =>{
+        const commentIndex = data.findIndex(comment=>comment.id===parseInt(id))
+        if(commentIndex!==-1){
+            setCurrentCommentIndex(commentIndex)
+        } else{
+            alert("No se encontró ningún comentario con ese ID")
+        }
+    }
     return(
         <>
             <div className="all-comments">
-                <AllComment/>
+                {loading && <p>Cargando...</p>}
+                {error && <h3>Error: {error.message}</h3>}
+                {data && (
+                    <AllComment
+                    comment={data[currentCommentIndex]}
+                    onNextComment={handleNextComment}
+                    onFirstComment={handleFirstComment}
+                    onPreviewComment={handlePreviewComment}
+                    />
+                )}
             </div>
             <div className="search-comments">
-                <CommentPost/>
+                <CommentPost onSubmit={handleCommentSearch}/>
             </div>
         </>
     )
