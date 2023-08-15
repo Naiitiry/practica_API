@@ -11,7 +11,6 @@ const ComentariosGrid = () =>{
             setCurrentCommentIndex(currentCommentIndex + 1);
         }
     };
-
     const handleFirstComment = ()=>{
         setCurrentCommentIndex(0)
     }
@@ -20,7 +19,6 @@ const ComentariosGrid = () =>{
             setCurrentCommentIndex(currentCommentIndex - 1);
         }
     };
-    
     const handleCommentSearch = (id) =>{
         const commentIndex = data.findIndex(comment=>comment.id===parseInt(id))
         if(commentIndex!==-1){
