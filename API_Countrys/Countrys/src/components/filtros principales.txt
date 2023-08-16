@@ -2,7 +2,6 @@ nombre del pais
 capital
 continente/region
 lenguaje
-traduccion a otros idiomas del país
 maps - googlemaps
 poblacion
 bandera

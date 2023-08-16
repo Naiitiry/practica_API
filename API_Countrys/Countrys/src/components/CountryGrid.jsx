@@ -18,6 +18,9 @@ const CountrysWorld = () => {
             setCountryIndex(countryIndex+1)
         }
     }
+    const handleFirstCountry = ()=>{
+        setCountryIndex(0)
+    }
     return(
         <>
             <div className="country-search-title">
@@ -34,6 +37,7 @@ const CountrysWorld = () => {
                         countryData={data[countryIndex]}
                         onSelectCountry={handleCountryPreview}
                         onSelectCountry2={handleCountryNext}
+                        onSelectCountry3={handleFirstCountry}
                         />
                     )}
                 </ul>
