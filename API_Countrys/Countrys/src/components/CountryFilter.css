@@ -1,6 +1,7 @@
 .country-filter{
     list-style: none;
     border: solid 1px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,4 +21,5 @@
     grid-template-columns: repeat(3,100px);
     gap: 10px;
     place-items: center;
+    margin-top: 15px;
 }
