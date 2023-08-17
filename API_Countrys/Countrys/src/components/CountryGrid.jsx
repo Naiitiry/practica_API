@@ -1,9 +1,10 @@
 import { useFetch } from "./useFetch.js"
 import { Filter_Country } from "./CountryFilter.jsx"
 import { useState } from "react"
+import './CountryGrid.css'
 
 const CountrysWorld = () => {
-    const {data,loading,error} = useFetch(`https://restcountries.com/v3.1/all/`)
+    const {data,loading} = useFetch(`https://restcountries.com/v3.1/all/`)
     console.log(data);
     //índice de paises
     const [countryIndex,setCountryIndex] = useState(0)
@@ -22,16 +23,15 @@ const CountrysWorld = () => {
         setCountryIndex(0)
     }
     return(
-        <>
+        <div className="country-search">
             <div className="country-search-title">
                 <h1>
-                    Filtro de paises: 
+                    Lista de paises: 
                 </h1>
             </div>
-            <div className="country-search">
+            <div className="country-search-list">
                 <ul>
                     {loading && <h2>Cargando...</h2>}
-                    {error && <h2>Error: {error.message}</h2>}
                     {data && (
                         <Filter_Country
                         countryData={data[countryIndex]}
@@ -42,7 +42,7 @@ const CountrysWorld = () => {
                     )}
                 </ul>
             </div>
-        </>
+        </div>
     )
 }
 export {CountrysWorld}

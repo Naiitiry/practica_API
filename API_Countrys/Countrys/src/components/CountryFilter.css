@@ -1,0 +1,23 @@
+.country-filter{
+    list-style: none;
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    padding: 10px;
+}
+.flags{
+    border-radius: 10px;
+    height: 200px;
+}
+.country-filter-description{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btns-container{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+    place-items: center;
+}
