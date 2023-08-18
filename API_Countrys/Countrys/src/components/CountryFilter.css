@@ -23,3 +23,11 @@
     place-items: center;
     margin-top: 15px;
 }
+.btns{
+    height: 50px;
+    border-radius: 15px;
+    border:1px solid #958ef5;
+}
+.btns:hover{
+    background-color: cornflowerblue;
+}
