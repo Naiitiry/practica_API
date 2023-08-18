@@ -1,30 +1,40 @@
 .country-filter{
     list-style: none;
-    border: solid 1px;
+    border: none;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 400px;
-    height: 450px;
+    width: 430px;
+    height: 500px;
     padding: 10px;
+    text-align: center;
+    background-color: #77dd77;
+    box-shadow: 
+        0 0 10px rgba(119, 221, 119, 0.5), /* Sombra en la parte superior */
+        0 0 10px rgba(119, 221, 119, 0.5), /* Sombra en la parte derecha */
+        0 0 10px rgba(119, 221, 119, 0.5), /* Sombra en la parte inferior */
+        0 0 10px rgba(119, 221, 119, 0.5); /* Sombra en la parte izquierda */
 }
 .flags{
     border-radius: 10px;
-    height: 200px;
+    height: 250px;
 }
 .country-filter-description{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    height: 200px;
+    padding-top: 10px;
 }
 .btns-container{
     display: grid;
-    grid-template-columns: repeat(3,100px);
+    grid-template-columns: repeat(3,130px);
     gap: 10px;
     place-items: center;
-    margin-top: 15px;
+    margin-top: 12px;
 }
 .btns{
     height: 50px;
+    width: 60px;
     border-radius: 15px;
     border:1px solid #958ef5;
 }

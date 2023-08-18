@@ -4,3 +4,7 @@
     align-items: center;
     align-content: center;
 }
+.country-search-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 25px 0px;
+}
