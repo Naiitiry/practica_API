@@ -1,7 +1,0 @@
-nombre del pais
-capital
-continente/region
-lenguaje
-maps - googlemaps
-poblacion
-bandera
